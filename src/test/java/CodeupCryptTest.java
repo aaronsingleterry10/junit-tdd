@@ -23,9 +23,9 @@ public class CodeupCryptTest {
         assertEquals("124", CodeupCrypt.hashPassword("12a"));
     }
 
-//    @Test
-//    public void testCheckPassword(){
-//        assertTrue("check password", CodeupCrypt.checkPassword("fer", "f3r"));
-//        assertFalse("check password", CodeupCrypt.checkPassword("fer", "fer"));
-//    }
+    @Test
+    public void testCheckPassword(){
+        assertTrue("check password", CodeupCrypt.checkPassword("fer", "f3r"));
+        assertFalse("check password", CodeupCrypt.checkPassword("fer", "fer"));
+    }
 }

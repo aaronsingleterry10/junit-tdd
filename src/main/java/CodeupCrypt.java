@@ -21,4 +21,8 @@ public class CodeupCrypt {
         }
         return output;
     }
+
+    public static boolean checkPassword(String pass, String hash) {
+        return hash.equals(hashPassword(pass));
+    }
 }
