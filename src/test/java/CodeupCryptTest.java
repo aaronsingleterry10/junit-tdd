@@ -25,7 +25,9 @@ public class CodeupCryptTest {
 
     @Test
     public void testCheckPassword(){
+        assertTrue(CodeupCrypt.checkPassword("test", "t3st"));
         assertTrue("check password", CodeupCrypt.checkPassword("fer", "f3r"));
         assertFalse("check password", CodeupCrypt.checkPassword("fer", "fer"));
+
     }
 }
