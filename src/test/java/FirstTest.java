@@ -33,4 +33,14 @@ public class FirstTest {
         assertNotEquals(4.9, price - discount, 0.5);
     }
 
+    @Test
+    public void testIfObjectsAreDifferent() {
+        Object dog = new Object();
+        Object sheep = new Object();
+        Object clonnedSheep = sheep;
+
+        assertNotSame(sheep, dog);
+        assertSame(sheep, clonnedSheep);
+    }
+
 }
