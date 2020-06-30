@@ -20,4 +20,14 @@ public class MyFirstTest {
         List<String> moreLanguages = new ArrayList<>();
         assertNotSame(languages, moreLanguages);
     }
+
+    @Test
+    public void arrayEqualsArray() {
+        int[] numbers = {1, 2, 3};
+        int[] otherNumbers = new int[3];
+        otherNumbers[0] = 1;
+        otherNumbers[1] = 2;
+        otherNumbers[2] = 3;
+        assertArrayEquals(numbers, otherNumbers);
+    }
 }
